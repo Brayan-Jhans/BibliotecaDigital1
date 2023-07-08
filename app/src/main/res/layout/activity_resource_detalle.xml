@@ -14,28 +14,24 @@
         android:layout_gravity="center"
         android:layout_marginBottom="16dp" />
 
-
     <EditText
         android:id="@+id/Titulotv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="titulo"
         />
-
     <EditText
         android:id="@+id/Autortv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="autor"
         />
-
     <EditText
         android:id="@+id/Descripciontv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="descripcion"
         />
-
     <Button
         android:id="@+id/botonBuscar"
         android:layout_width="168dp"

@@ -18,9 +18,7 @@ public class SearchActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search);
-
         resultadosTextView = findViewById(R.id.resultadosTextView);
-
         Button searchButton = findViewById(R.id.searchButton);
         searchButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,11 +34,9 @@ public class SearchActivity extends AppCompatActivity {
         EditText searchEditText = findViewById(R.id.searchEditText);
         return searchEditText.getText().toString();
     }
-
     private String buscarRecursos(String query) {
         return "Resultados de búsqueda para: " + query;
     }
-
     private void mostrarResultados(String resultados) {
         resultadosTextView.setText(resultados);
     }

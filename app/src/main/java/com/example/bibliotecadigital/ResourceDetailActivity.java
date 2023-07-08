@@ -29,29 +29,24 @@ public class ResourceDetailActivity extends AppCompatActivity implements View.On
 
         botonBuscar.setOnClickListener(this);
 
-        // Obtener los datos del recurso seleccionado
         String title = getIntent().getStringExtra("title");
         String author = getIntent().getStringExtra("author");
         String description = getIntent().getStringExtra("description");
 
-        // Mostrar los detalles del recurso en la interfaz de usuario
         Titulotv.setText(title);
         Autortv.setText(author);
         Descripciontv.setText(description);
     }
-
     @Override
     public void onClick(View v) {
         if (v.getId() == R.id.botonBuscar) {
             buscarLibro();
         }
     }
-
     private void buscarLibro() {
         String titulo = Titulotv.getText().toString();
         String autor = Autortv.getText().toString();
         String descripcion = Descripciontv.getText().toString();
-
         String mensaje = "Búsqueda de libro\nTítulo: " + titulo + "\nAutor: " + autor + "\nDescripción: " + descripcion;
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
     }

@@ -37,7 +37,6 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Usuario registrado correctamente", Toast.LENGTH_SHORT).show();
 
-
                     Intent intent = new Intent(MainActivity.this, ResourceDetailActivity.class);
                     startActivity(intent);
                 }
