@@ -48,14 +48,10 @@ public class ResourceDetailActivity extends AppCompatActivity implements View.On
     }
 
     private void buscarLibro() {
-        // Lógica para buscar el libro según los criterios ingresados en los EditText
         String titulo = Titulotv.getText().toString();
         String autor = Autortv.getText().toString();
         String descripcion = Descripciontv.getText().toString();
 
-        // Aquí puedes realizar la búsqueda real y mostrar los resultados como desees
-        // Por ejemplo, puedes iniciar una nueva actividad o mostrar un Toast con los resultados
-        // En este ejemplo, simplemente mostraremos los criterios de búsqueda en un Toast
         String mensaje = "Búsqueda de libro\nTítulo: " + titulo + "\nAutor: " + autor + "\nDescripción: " + descripcion;
         Toast.makeText(this, mensaje, Toast.LENGTH_SHORT).show();
     }

@@ -38,8 +38,6 @@ public class SearchActivity extends AppCompatActivity {
     }
 
     private String buscarRecursos(String query) {
-        // Lógica de búsqueda de recursos según el query
-        // Retorna los resultados como un String
         return "Resultados de búsqueda para: " + query;
     }
 

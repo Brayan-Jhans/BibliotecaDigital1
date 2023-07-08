@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 String usuario = usuarioTextView.getText().toString();
                 String contrasena = contrasenaTextView.getText().toString();
 
-                // Validar si el usuario y contraseña están vacíos
+
                 if (usuario.isEmpty() || contrasena.isEmpty()) {
                     Toast.makeText(MainActivity.this, "Ingrese usuario y contraseña", Toast.LENGTH_SHORT).show();
                 } else {
