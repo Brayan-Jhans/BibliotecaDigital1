@@ -39,5 +39,11 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
         android:onClick="buscarlibro"
-        android:text="buscar" />
+        android:text="guardar" />
+    <Button
+        android:id="@+id/redirectToSearchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ir a Búsqueda" />
+
 </LinearLayout>
